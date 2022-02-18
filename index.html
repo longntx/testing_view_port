@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing view port</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #e {
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+        }
+        #a {
+            height: 44px;
+            background: cyan;
+        }
+        #c {
+            height: 144px;
+            background: pink;
+        }
+        #b {
+            flex: 1;
+            overflow-x:hidden;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="e">
+    <div id="a">
+        A
+    </div>
+    <div id="b">
+        B
+    </div>
+    <div id="c">
+        C
+    </div>
+</div>
+</body>
+</html>
